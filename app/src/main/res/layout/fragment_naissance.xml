@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backg"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/image_attestation"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_image"
+                android:visibility="gone"
+                >
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp">
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/bt_cameraAt"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_photo_camera_black_24dp"
+
+                    >
+
+                </Button>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capturer attestation de naissance"
+                    />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:textColorHint="@color/colorblac">
+                <EditText
+
+                    android:id="@+id/b_noms_enfant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Noms enfant"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorblack"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textColor="@color/colorblac"
+                android:layout_gravity="center"
+                >
+                <RadioButton
+                    android:id="@+id/sexeM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:textColor="@color/colorblac"/>
+                <RadioButton
+                    android:id="@+id/sexeF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="F"
+                    android:textColor="@color/colorblac"/>
+            </RadioGroup>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColorHint="@color/colorblac"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/l1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <EditText
+                        android:id="@+id/b_lieu_naissance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Lieu de naissance"
+
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+
+                    android:textColorHint="@color/colorblac">
+
+                    <TextView
+                        android:id="@+id/b_date_naissance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Date naissance"
+                        android:singleLine="true"
+                        android:padding="10dp"
+                        android:background="@drawable/round_image"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColorHint="@color/colorblac"
+                >
+                <EditText
+
+                    android:id="@+id/b_nom_hopital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Nom Hôpital"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorblack"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/dd"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <EditText
+                        android:id="@+id/b_nom_pere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nom père"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <EditText
+                        android:id="@+id/b_nom_mere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nom mère"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <EditText
+                        android:id="@+id/b_prenom_pere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Prénom père"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <EditText
+                        android:id="@+id/b_prenom_mere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Prénom mère"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <TextView
+                        android:id="@+id/b_date_naissance_pere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Age père"
+                        android:singleLine="true"
+                        android:padding="10dp"
+                        android:background="@drawable/round_image"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <TextView
+                        android:id="@+id/b_date_naissance_mere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Age mère"
+                        android:singleLine="true"
+                        android:padding="10dp"
+                        android:background="@drawable/round_image"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"
+                        android:textColorHint="@color/colorblac"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <EditText
+                        android:id="@+id/profession_pere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Profession père"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <EditText
+                        android:id="@+id/profession_mere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Profession mère"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <EditText
+                        android:id="@+id/nationalite_pere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nationalité père"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <EditText
+                        android:id="@+id/nationalite_mere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nationalité mère"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorblack">
+
+                    <EditText
+                        android:id="@+id/adresse_pere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Adresse père"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColorHint="@color/colorblac"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <EditText
+                        android:id="@+id/adresse_mere"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Adresse mère"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <EditText
+                        android:id="@+id/b_telephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Téléphone responsable"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColorHint="@color/colorblac">
+
+                    <EditText
+                        android:id="@+id/b_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mail responsable"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorblack"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+
+                android:id="@+id/b_declarer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="Déclarer"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#f5fdf1"
+                android:background="@drawable/button"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

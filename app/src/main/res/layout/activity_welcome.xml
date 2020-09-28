@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@drawable/background"
+
+    >
+    <RelativeLayout
+        android:id="@+id/haut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:id="@+id/bienv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bienve"
+            android:textColor="#295d63"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/rev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bienv"
+            android:text="@string/revoir"
+            android:textSize="25dp"
+            android:textColor="#295d63"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            >
+        </TextView>
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="162dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/rev"
+            android:textColor="#72c8a9"
+            android:background="@drawable/button"
+            android:layout_marginTop="40dp"
+            android:text="Connexion"
+            android:textSize="20dp"
+            >
+        </Button>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="370dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="15dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pas de compte?"
+            android:textSize="25dp"
+            android:textColor="#f3fded"
+            />
+
+        <TextView
+            android:id="@+id/singin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text=" Cliquer ici"
+            android:textSize="25dp"
+            android:textColor="#a5e4af"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Déclaration info"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorblack"
+            android:textStyle="bold"
+            android:layout_gravity="center">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#232329"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Noms Enfant : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_nomsEnf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Noms Enfant"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexe : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_sexe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexe"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Naissance : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_date_naissance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Naissance"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hôpital : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_nom_hopital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hôpital"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lieu Naissance : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_lieu_naissance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lieu Naissance"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Noms Père : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+
+                />
+            <TextView
+                android:id="@+id/d_Tv_nomPere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Noms Père"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom Mère : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_nomsMere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom Mère"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age Père : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_age_pere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age Père"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age Mère : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_age_mere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age Mère"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nationalite Pere : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_nationalite_pere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nationalite Pere"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nationalite Mere : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_nationalite_mere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nationalite Mere"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse Pere : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_adresse_pere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse Pere"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse Mere : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_adresse_mere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse Mere"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profession Père : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_profession_pere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profession Père"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom Mère : "
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/d_Tv_profession_mere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profession Mère"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+        <!--
+        <Button
+            android:id="@+id/d_Bt_Imprimer"
+            android:textAlignment="textStart"
+            android:padding="20dp"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Imprimer"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start"
+            />
+        <Button
+            android:id="@+id/d_Bt_Modifier"
+            android:drawablePadding="20dp"
+            android:textAlignment="textStart"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Modifier"
+            android:layout_gravity="start" />
+            -->
+    </LinearLayout>
+
+</LinearLayout>

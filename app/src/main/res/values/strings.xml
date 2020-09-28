@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">eBebe</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Connexion pour : </string>
+    <string name="nav_header_subtitle">vicsebu@gmail.com.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">A propos</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_naissance">D. Naissance</string>
+    <string name="menu_listdeclration">Liste déclaration</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Partager</string>
+    <string name="menu_send">Send</string>
+
+    <string name="bienve">Bienvenue!</string>
+    <string name="revoir">C\'est un plaisir de vous revoir</string>
+</resources>
